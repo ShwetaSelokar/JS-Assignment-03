@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-03 Iteration Statement</title>
+</head>
+<style>
+    h3{
+        color: brown;
+    }
+    p{
+        color: blue;
+    }
+</style>
+<body>
+    <h1>Iteration Statement</h1>
+    <h3>Find the number of digits</h3>
+    <p><pre>
+        const Find_Digits = (N) => 
+    {
+     var count=0;
+	while(N!==0){
+	  
+	  N=parseInt(N/10);
+	  count++;
+	}
+    	return count;
+     };
+
+    </pre></p>
+
+    <hr>
+
+    <h3>Find the Fives.</h3>
+    <p>
+        <pre>
+            const Find_Five = (N) =>
+{
+let a=0;
+
+
+	while(N>0){
+	  
+	 let rem=(N%10);
+	 
+	  if(rem==5){
+	    a++;
+	  }
+	  
+	  N=parseInt(N/10);
+	}
+	return a;
+};
+        </pre>
+    </p>  
+    <hr>
+    <h3>Find Sum</h3> 
+    <p>
+        <pre>
+            const findSum = (n) => {
+                sum = 0;
+                    for (i=1;i<=n;i++){
+                      if (i%2===0){
+                            sum=sum+i;
+                           }
+                    }
+                return sum;
+            };
+            
+        </pre>
+    </p> 
+    <hr>
+    <h3>Find the sum of the digits of a given number.</h3>
+    <p>
+        <pre>
+            const Number_Sum = (N) => 
+{
+  sum=0;
+  str = N.toString();
+
+	for (i = 0; i < str.length; i++) {
+              sum = sum + parseInt(str[i]);
+            }
+  return sum;
+};
+
+        </pre>
+    </p>
+    <hr>
+    <h3>Print the Odds.</h3>
+    <p>
+        <pre>
+            const Print_Odd = (N) => 
+{
+  console.log(2);
+	for(i=2;i<=N;i++){
+	  if(i%2!==0){
+	    console.log(i);
+	  }
+	} 
+};
+
+        </pre>
+    </p>
+    <hr>
+    <h3>Print the Pattern.</h3>
+    <p>
+        <pre>
+            const Print_pattern = (N) => 
+{
+  let str=" ";
+  for(let i=1;i<=N;i++){
+    str=str + "*";
+    console.log(str);
+  }
+};
+
+        </pre>
+    </p>
+    <hr>
+    <h3>Check whether a Number is a prime or not.</h3>
+    <p>
+        <pre>
+            const Prime_Check = (N) => 
+{
+	 if(N == 1 || N == 2){
+            return "NO";
+          }
+        var i, check=0;
+        for(i=2; i< N; i++)
+        {
+          if(N % i === 0)
+          {
+            check++;
+            break;
+          }
+        }
+        if(check === 0)
+          return("YES");
+        else
+          return("NO");
+	 
+	
+};
+
+        </pre>
+    </p>
+    <hr>
+    <h3>Print Numbers</h3>
+    <p>
+        <pre>
+            const printNumbers = (n) => {
+                for (let i=1;i<=n;i++){
+                      console.log(i);
+                    }
+                
+            };
+            
+        </pre>
+    </p>
+    <hr>
+    <h3>Print the Table</h3>
+    <p>
+        <pre>
+            const Print_Table = (N) => 
+{
+  
+  for(i=1;i<=10;i++){
+    multi=N*i;
+    console.log(N + " * " + i + " = " + multi);
+    
+  }
+};
+        </pre>
+    </p>
+</body>
+</html>
